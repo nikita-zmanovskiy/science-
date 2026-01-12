@@ -1,0 +1,16 @@
+# Configuration for financial data experiments
+base_delta: 1.0          # 1 second resolution
+max_timeframe: 3600.0    # 1 hour maximum
+n_samples: 1000000       # 1 million samples
+test_queries: 1000       # Number of test queries
+random_seed: 42
+
+# Financial parameters
+initial_price: 100.0
+volatility: 0.02         # 2% daily volatility
+trend: 0.0001            # Slight upward trend
+spread: 0.01             # Bid-ask spread
+
+# Experiment settings
+timeframes: [1, 5, 10, 30, 60, 300, 600, 1800]  # Test timeframes in seconds
+warmup_samples: 10000    # Samples to process before measuring
